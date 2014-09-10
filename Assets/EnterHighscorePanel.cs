@@ -12,5 +12,6 @@ public class EnterHighscorePanel : MonoBehaviour {
 	public void ClickedOK() {
 		SaveLoadManager.instance.Save(name.text, int.Parse(score.text));
 		scoreDisplay.UpdateNames();
+		gameObject.SetActive(false);
 	}	
 }

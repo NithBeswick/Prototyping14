@@ -16,6 +16,7 @@ public class ButtonClicker : MonoBehaviour {
 		text.text = initialNumber + "";
 
 		//tell manager to create new button, AND increase score by 1
+		LevelManager.instance.OnClick();
 
 		if(initialNumber <= 0) {
 			Destroy(gameObject);
